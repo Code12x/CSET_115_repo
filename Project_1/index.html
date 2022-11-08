@@ -1,0 +1,32 @@
+<!-- Justin Koch. Group 2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSET 105 Final Project 1</title>
+
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <div id="menu"> <!--Setting up the menu buttons-->
+        <button id="all-btn" onclick="updateView(`all`)">Show All Items</button>
+        
+        <button id="items-left-btn" onclick="updateView(`left`)">Show the Remaining Items</button>
+
+        <button id="purchased-btn" onclick="updateView(`purchased`)">Show the Purchased Items</button>
+    </div>
+
+    <div id="add-item"> <!--Text box to input items-->
+        <p>Add an item: </p>
+        <input type="text" onchange="addItem(this, `all`)">
+    </div>
+
+    <div id="items-list-div"> <!--The list of items organized in an unordered list-->
+        <ul id="items-list"></ul>
+    </div>
+
+    <script src="./script/script.js"></script>
+</body>
+</html>

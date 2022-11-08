@@ -1,0 +1,52 @@
+<!-- Justin Koch. Group 2 -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSET 105 Final Project 4</title>
+
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body class="center-screen">
+    <div id="main-container">
+
+        <div id="result-container">
+            <p id="result" class="white-text">Password Generator</p>
+        </div>
+
+        <div id="length-container" class="flexable">
+            <p id="length" class="white-text flex-left">Password Length</p>
+            <input type="number" id="length-input" class="flex-right" value=12>
+        </div>
+
+        <div id="upper-container" class="flexable">
+            <p id="upper" class="white-text flex-left">Contain Uppercase Letters</p>
+            <input type="checkbox" id="upper-checkbox" class="flex-right">
+        </div>
+
+        <div id="lower-container" class="flexable">
+            <p id="lower" class="white-text flex-left">Contain Lowercase Letters</p>
+            <input type="checkbox" id="lower-checkbox" class="flex-right">
+        </div>
+
+        <div id="numbers-container" class="flexable">
+            <p id="numbers" class="white-text flex-left">Contain Numbers</p>
+            <input type="checkbox" id="numbers-checkbox" class="flex-right">
+        </div>
+
+        <div id="symbols-container" class="flexable">
+            <p id="symbols" class="white-text flex-left">Contain Symbols</p>
+            <input type="checkbox" id="symbols-checkbox" class="flex-right">
+        </div>
+
+        <div id="button-container">
+            <button id="gen-pass-btn" onclick="generate()">Generate Password</button>
+        </div>
+        
+    </div>
+    
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

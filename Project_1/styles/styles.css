@@ -1,0 +1,12 @@
+/* Justin Koch. Group 2 */
+#add-item {
+    margin-top: 15px;
+}
+
+#add-item p{
+    display : inline;
+}
+
+#items-list li {
+    width: fit-content;
+}
